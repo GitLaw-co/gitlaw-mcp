@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Lead with GitLaw's legal quality checks in the README and manifest descriptions.
+- Link each setup section to its guide on git.law.
+- Remove the unused plugin icon.
+
 ## 1.0.0 - 2026-11-09
 
 - Claude Code plugin and marketplace connecting to GitLaw's hosted MCP server over OAuth.

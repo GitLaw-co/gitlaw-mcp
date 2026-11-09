@@ -1,7 +1,11 @@
 # GitLaw MCP
 
-Connect Claude, Gemini CLI, ChatGPT and other MCP clients to [GitLaw](https://git.law), the
-AI-enabled legal workspace for drafting contracts, negotiating with tracked changes, and e-signing.
+Connect Claude, Gemini CLI, ChatGPT and other MCP clients to [GitLaw](https://git.law), and have
+GitLaw check your AI's legal work. GitLaw's legal quality checks compare a contract with legal
+playbooks (US, UK and global) and market standards, and flag what is risky or off-market. Your
+contracts can also live in GitLaw: version history, negotiation with tracked changes, and e-signing.
+
+Overview and setup guides: [git.law/features/mcp](https://git.law/features/mcp).
 
 This repository holds client configuration only. It connects to GitLaw's hosted MCP server and
 does not run a server of its own.
@@ -22,7 +26,8 @@ and open a browser window for you to sign in to GitLaw.
 /plugin install gitlaw@gitlaw
 ```
 
-Then run `/mcp`, pick `gitlaw` and sign in. The plugin also adds two skills:
+Then run `/mcp`, pick `gitlaw` and sign in. Guide:
+[git.law/integrations/claude](https://git.law/integrations/claude). The plugin also adds two skills:
 `/gitlaw:review-contract` and `/gitlaw:draft-and-sign`.
 
 To use an API key instead of OAuth, skip the plugin and add the server yourself:
@@ -39,6 +44,7 @@ claude mcp add --transport http gitlaw https://be-public-api.git.law/mcp --heade
 4. Click **Connect** and sign in to GitLaw.
 
 On Team and Enterprise plans an owner may need to add the connector for the organization first.
+Guide with screenshots: [git.law/integrations/claude](https://git.law/integrations/claude).
 
 ## Gemini CLI
 
@@ -48,7 +54,8 @@ gemini extensions install https://github.com/GitLaw-co/gitlaw-mcp
 
 Start `gemini`, then run `/mcp auth gitlaw` to sign in. The extension loads
 [GEMINI.md](GEMINI.md) as context so Gemini follows GitLaw's usage rules, and adds the same two
-skills as the Claude plugin.
+skills as the Claude plugin. Guide:
+[git.law/integrations/gemini](https://git.law/integrations/gemini).
 
 To use an API key, add the server to `~/.gemini/settings.json` instead:
 
@@ -73,7 +80,8 @@ GitLaw can be added as a custom app (connector) in ChatGPT:
    server URL with **OAuth** authentication.
 3. Sign in to GitLaw when prompted, then enable GitLaw in a chat from the tools menu.
 
-Availability of custom apps depends on your ChatGPT plan.
+Availability of custom apps depends on your ChatGPT plan. Guide:
+[git.law/integrations/chatgpt](https://git.law/integrations/chatgpt).
 
 ## Other MCP clients
 
@@ -203,6 +211,8 @@ minutes.
 
 ## Example prompts
 
+- "Ask GitLaw to do a legal check on the contract you just wrote for me, and fix anything it
+  flags before I send it."
 - "Find our NDA with Acme in GitLaw and tell me whether the non-solicit clause is market-standard
   in England and Wales."
 - "Draft a mutual NDA between Example Co and Acme Inc under Delaware law, starting from a

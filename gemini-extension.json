@@ -1,7 +1,7 @@
 {
   "name": "gitlaw",
   "version": "1.0.0",
-  "description": "Connect to GitLaw's hosted MCP server: draft contracts, negotiate with tracked changes, comment, and e-sign.",
+  "description": "Have GitLaw check your AI's legal work against playbooks and market standards, then draft, negotiate with tracked changes and e-sign in GitLaw.",
   "mcpServers": {
     "gitlaw": {
       "httpUrl": "https://be-public-api.git.law/mcp"
