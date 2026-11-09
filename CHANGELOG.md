@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Lead with GitLaw's legal quality checks in the README and manifest descriptions.
+- Position GitLaw as making the assistant's legal work accurate, reliable and organized (README and manifest descriptions).
 - Link each setup section to its guide on git.law.
 - Remove the unused plugin icon.
 

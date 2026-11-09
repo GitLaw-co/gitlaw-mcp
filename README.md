@@ -1,9 +1,18 @@
 # GitLaw MCP
 
-Connect Claude, Gemini CLI, ChatGPT and other MCP clients to [GitLaw](https://git.law), and have
-GitLaw check your AI's legal work. GitLaw's legal quality checks compare a contract with legal
-playbooks (US, UK and global) and market standards, and flag what is risky or off-market. Your
-contracts can also live in GitLaw: version history, negotiation with tracked changes, and e-signing.
+Connect Claude, ChatGPT, Gemini CLI and other MCP clients to [GitLaw](https://git.law). Your
+assistant brings the chat, the model and its connections to your other apps. GitLaw makes its
+legal work accurate, reliable and organized.
+
+- **Accurate.** GitLaw's legal quality checks compare a contract with contract-specific playbooks
+  (US, UK and global) and market standards, and flag what is risky or off-market. Drafts start
+  from a library of proven templates, not a blank page.
+- **Reliable.** Every change is saved as a new version you can compare. You choose whether the
+  assistant edits a contract directly or as tracked changes you accept or reject. Import and
+  export Word files.
+- **Organized.** Contracts stay in one GitLaw workspace, whichever assistant you or your
+  teammates use. Key dates are pulled out, and you can share, comment and send for e-signature
+  from the chat.
 
 Overview and setup guides: [git.law/features/mcp](https://git.law/features/mcp).
 

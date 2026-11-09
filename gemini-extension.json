@@ -1,7 +1,7 @@
 {
   "name": "gitlaw",
   "version": "1.0.0",
-  "description": "Have GitLaw check your AI's legal work against playbooks and market standards, then draft, negotiate with tracked changes and e-sign in GitLaw.",
+  "description": "Make your AI's legal work accurate, reliable and organized: legal quality checks against playbooks and market standards, tracked changes, version history and e-signing in GitLaw.",
   "mcpServers": {
     "gitlaw": {
       "httpUrl": "https://be-public-api.git.law/mcp"
