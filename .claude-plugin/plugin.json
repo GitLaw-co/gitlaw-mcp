@@ -1,0 +1,24 @@
+{
+  "name": "gitlaw",
+  "displayName": "GitLaw",
+  "version": "1.0.0",
+  "description": "Connect to GitLaw's hosted MCP server: draft contracts, negotiate with tracked changes, comment, and e-sign.",
+  "author": {
+    "name": "GitLaw",
+    "email": "support@git.law",
+    "url": "https://git.law"
+  },
+  "homepage": "https://github.com/GitLaw-co/gitlaw-mcp",
+  "repository": "https://github.com/GitLaw-co/gitlaw-mcp",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "contracts",
+    "e-signature",
+    "mcp",
+    "gitlaw"
+  ],
+  "supportUrl": "https://github.com/GitLaw-co/gitlaw-mcp/issues",
+  "privacyPolicyUrl": "https://git.law/privacy-policy",
+  "termsOfServiceUrl": "https://git.law/terms-of-service"
+}

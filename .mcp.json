@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gitlaw": {
+      "type": "http",
+      "url": "https://be-public-api.git.law/mcp"
+    }
+  }
+}

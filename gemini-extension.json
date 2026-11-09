@@ -1,0 +1,11 @@
+{
+  "name": "gitlaw",
+  "version": "1.0.0",
+  "description": "Connect to GitLaw's hosted MCP server: draft contracts, negotiate with tracked changes, comment, and e-sign.",
+  "mcpServers": {
+    "gitlaw": {
+      "httpUrl": "https://be-public-api.git.law/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

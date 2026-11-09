@@ -1,0 +1,31 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON
+        run: |
+          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json .mcp.json gemini-extension.json; do
+            jq empty "$f" || { echo "::error file=$f::invalid JSON"; exit 1; }
+          done
+
+      - name: Versions match
+        run: |
+          plugin=$(jq -r .version .claude-plugin/plugin.json)
+          gemini=$(jq -r .version gemini-extension.json)
+          echo "plugin.json=$plugin gemini-extension.json=$gemini"
+          if [ "$plugin" != "$gemini" ]; then
+            echo "::error::version mismatch: plugin.json $plugin, gemini-extension.json $gemini"
+            exit 1
+          fi
