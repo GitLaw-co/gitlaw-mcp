@@ -9,7 +9,7 @@
     {
       "name": "gitlaw",
       "source": "./",
-      "description": "Connect to GitLaw's hosted MCP server: draft contracts, negotiate with tracked changes, comment, and e-sign."
+      "description": "Make your AI's legal work accurate, reliable and organized: legal quality checks against playbooks and market standards, tracked changes, version history and e-signing in GitLaw."
     }
   ]
 }
