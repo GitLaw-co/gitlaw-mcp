@@ -185,9 +185,9 @@ The server exposes 29 tools.
 
 | Group | Tool | Purpose |
 | --- | --- | --- |
-| Session | `guide` | How to use GitLaw's tools; call once at the start of a session |
+| Session | `guide` | Reference on GitLaw's workflows, limits and error codes |
 | | `whoami` | The signed-in user, their organizations and default jurisdiction |
-| AI | `ask` | Ask GitLaw's legal assistant about a document or clause (read-only) |
+| AI | `ask` | Review a contract or clause with GitLaw (read-only) |
 | | `draft_document` | Draft a new document with GitLaw's AI |
 | | `edit_document` | Change a document from a plain-language instruction, directly or as tracked changes |
 | Documents | `create_document` | Create a document from a template, from markdown, or blank |
@@ -196,8 +196,8 @@ The server exposes 29 tools.
 | | `search_documents` | Search documents by title and summary |
 | | `search_templates` | Search GitLaw's public template library |
 | | `list_categories` | List template library categories |
-| | `create_upload` | Get an upload URL for a local `.docx` file |
-| | `import_docx` | Import a Word file as a new document |
+| | `create_upload` | Get an upload URL for a local PDF or `.docx` file |
+| | `import_file` | Import a PDF or Word file as a new document |
 | | `export_docx` | Export a document as a Word file |
 | | `share_document` | Share a document with people by email |
 | Folders | `create_folder` | Create a folder |

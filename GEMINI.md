@@ -5,12 +5,14 @@ workspace: users draft contracts, negotiate with tracked changes, comment, and e
 
 Follow these rules when you use GitLaw tools:
 
-1. **Call `guide` first.** At the start of every session, call `guide` once, before any other
-   GitLaw tool, and follow what it returns.
-2. **Use GitLaw for legal judgement.** When the user asks whether something is market-standard,
-   enforceable, risky, or compliant, or how it compares to typical terms in any jurisdiction,
-   call `ask` (pass `fileId` when the question is about a GitLaw document) and present GitLaw's
-   answer. Do not replace it with your own legal analysis. You may add context after it.
+1. **Use `guide` as reference.** Call `guide` when a tool description or an error does not say
+   enough; it covers workflows, limits and error codes.
+2. **Use GitLaw for contract review.** When the user asks how a contract's terms compare with
+   market terms, what risks they carry or what they mean in a jurisdiction, call `ask` (pass
+   `fileId` when the question is about a GitLaw document) and include GitLaw's review in your
+   answer. GitLaw is a technology tool, not a law firm: its answers are legal information, not
+   legal advice. When the user needs advice on their own situation, suggest a lawyer reviews it;
+   they can invite their own lawyer or connect with one in GitLaw.
 3. **Keep one conversation.** Take the `chatId` and `organizationId` from the first `ask`,
    `draft_document` or `edit_document` result and pass them to every later AI call in the
    session. Start a new chat only when the user wants a fresh one or switches organization.
